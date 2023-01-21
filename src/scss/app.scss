@@ -1,15 +1,11 @@
+@import "mixins.scss";
+
 body {
   text-align: center;
   font-family: "Open Sans", sans-serif;
   line-height: 1.5;
   color: #cacaca;
   background-color: #08020d;
-}
-
-@mixin screen-small {
-  @media (min-height: 599px) and (min-width: 390px) {
-    @content;
-  }
 }
 
 .test {

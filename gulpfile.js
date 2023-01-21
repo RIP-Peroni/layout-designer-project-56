@@ -14,8 +14,8 @@ browserSyncJob = () => {
 const buildSass = () => {
     console.log('Компиляция SASS');
 
-    return src('src/scss/*.scss')
-        .pipe(sass)
+    return src('src/scss/app.scss')
+        .pipe(sass())
         .pipe(dest('src/css/'))
         .pipe(browserSync.stream());
 };
