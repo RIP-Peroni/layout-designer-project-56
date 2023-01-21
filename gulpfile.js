@@ -15,7 +15,7 @@ const buildSass = () => {
     console.log('Компиляция SASS');
 
     return src('src/scss/*.scss')
-        .pipe(sass())
+        .pipe(sass)
         .pipe(dest('src/css/'))
         .pipe(browserSync.stream());
 };
