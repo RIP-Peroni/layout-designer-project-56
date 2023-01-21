@@ -4,10 +4,29 @@ body {
   line-height: 1.5;
   color: #cacaca;
   background-color: #08020d;
+  font-size: 16px;
 }
 
-@media (min-height: 599px) and (min-width: 390px) {
-  .test {
-    color: red;
+h1, h2 {
+  text-transform: uppercase;
+  line-height: 1.5em;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 60px;
+}
+@media (max-width: 414px) {
+  h1 {
+    font-size: 30px;
+  }
+}
+
+h2 {
+  font-size: 38px;
+}
+@media (max-width: 414px) {
+  h2 {
+    font-size: 18px;
   }
 }

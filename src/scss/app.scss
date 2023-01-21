@@ -6,10 +6,29 @@ body {
   line-height: 1.5;
   color: #cacaca;
   background-color: #08020d;
+  font-size: 16px;
 }
 
-.test {
-  @include screen-small {
-    color: red;
+h1, h2 {
+  @include headers;
+}
+
+h1 {
+  font-size: 60px;
+  @include mobile {
+    font-size: 30px;
   }
+  //@include desktop {
+  //  font-size: 60px;
+  //}
+}
+
+h2 {
+  font-size: 38px;
+  @include mobile {
+    font-size: 18px;
+  }
+  //@include desktop {
+  //  font-size: 38px;
+  //}
 }
